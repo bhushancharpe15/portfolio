@@ -1,0 +1,227 @@
+#!/bin/bash
+
+echo "🚀 Simple GitHub Pages Deployment"
+echo "================================="
+
+# Create a simple static version
+echo "📝 Creating simple static version..."
+
+# Create a simple index.html
+cat > index.html << 'EOF'
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhushan Charpe - ML Engineer & Developer</title>
+    <meta name="description" content="Computer Engineering student at Vishwakarma University specializing in Machine Learning, Deep Learning, and Computer Vision.">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            color: white;
+            line-height: 1.6;
+        }
+        .contact-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 0.5rem 0;
+            z-index: 1000;
+            text-align: center;
+        }
+        .contact-bar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-size: 0.9rem;
+            transition: opacity 0.3s;
+        }
+        .contact-bar a:hover { opacity: 0.8; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 2rem; padding-top: 4rem; }
+        .hero { text-align: center; padding: 4rem 0; }
+        .logo {
+            font-size: 4rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            background: linear-gradient(45deg, #ff6b6b, #4ecdc4, #45b7d1, #96ceb4);
+            background-size: 400% 400%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: gradient 3s ease infinite;
+        }
+        .subtitle { font-size: 1.5rem; margin-bottom: 2rem; opacity: 0.9; }
+        .description { font-size: 1.1rem; max-width: 600px; margin: 0 auto 3rem; opacity: 0.8; }
+        .section {
+            margin: 4rem 0;
+            padding: 2rem;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+        }
+        .section h2 { font-size: 2rem; margin-bottom: 1.5rem; text-align: center; }
+        .projects { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 2rem; }
+        .project-card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 1.5rem;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+        .project-card:hover { transform: translateY(-5px); }
+        .project-card h3 { color: #4ecdc4; margin-bottom: 1rem; }
+        .project-card a { color: #45b7d1; text-decoration: none; font-weight: bold; }
+        .project-card a:hover { text-decoration: underline; }
+        .achievements { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin-top: 2rem; }
+        .achievement {
+            background: linear-gradient(135deg, #ff6b6b, #4ecdc4);
+            padding: 1.5rem;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .achievement h3 { margin-bottom: 1rem; }
+        .social-links { text-align: center; margin-top: 3rem; }
+        .social-links a {
+            display: inline-block;
+            margin: 0 1rem;
+            padding: 1rem 2rem;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 25px;
+            color: white;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+        .social-links a:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateY(-2px);
+        }
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        @media (max-width: 768px) {
+            .logo { font-size: 2.5rem; }
+            .contact-bar a { margin: 0 0.5rem; font-size: 0.8rem; }
+            .container { padding: 1rem; padding-top: 3rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="contact-bar">
+        <a href="mailto:bhushancharpe135@gmail.com">📧 bhushancharpe135@gmail.com</a>
+        <a href="tel:+918767106500">📱 +91 8767106500</a>
+        <a href="https://linkedin.com/in/bhushancharpe" target="_blank">💼 LinkedIn</a>
+        <a href="https://www.instagram.com/bhushn.15" target="_blank">📸 Instagram</a>
+        <a href="https://github.com/bhushancharpe15" target="_blank">💻 GitHub</a>
+    </div>
+
+    <div class="container">
+        <div class="hero">
+            <div class="logo">BHUSHANCHARPE</div>
+            <div class="subtitle">ML Engineer & Developer</div>
+            <div class="description">
+                B.Tech Computer Engineering student at Vishwakarma University specializing in Machine Learning, Deep Learning, and Computer Vision. Building innovative AI solutions for real-world problems.
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>🚀 Featured Projects</h2>
+            <div class="projects">
+                <div class="project-card">
+                    <h3>🏆 EdgeCompress - Hackathon Winner</h3>
+                    <p>AI/ML Fusion National Hackathon Winner! AI model compression framework for edge deployment. Won 10K cash prize, trip to Malvan, and Reliance goodies.</p>
+                </div>
+                <div class="project-card">
+                    <h3>🔥 Forest Fire Detection</h3>
+                    <p>Best Project Award winner! ML-based forest fire detection system using advanced algorithms. Awarded at Binghamton University competition.</p>
+                </div>
+                <div class="project-card">
+                    <h3>🌐 BigBuddie Platform</h3>
+                    <p>Comprehensive web platform with dynamic content management and modern UI/UX. <a href="https://skullfire-2710.github.io/bigbuddie/" target="_blank">Live Demo</a></p>
+                </div>
+                <div class="project-card">
+                    <h3>⚡ Power Fault Prediction</h3>
+                    <p>AI-powered electrical grid monitoring and fault prediction system with real-time capabilities. <a href="https://tusharnd12.github.io/Power_Fault_Detection/" target="_blank">Live Demo</a></p>
+                </div>
+                <div class="project-card">
+                    <h3>🔗 IoT Device Identification</h3>
+                    <p>Advanced ML system to identify IoT devices based on network traffic patterns. <a href="https://bhushancharpe15.github.io/iot-device-identification" target="_blank">Live Demo</a></p>
+                </div>
+                <div class="project-card">
+                    <h3>😊 Emotion Detection</h3>
+                    <p>Real-time emotion recognition system using facial expression analysis powered by deep learning and CNNs.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>🏆 Major Achievements</h2>
+            <div class="achievements">
+                <div class="achievement">
+                    <h3>🥇 AI/ML Fusion National Hackathon Winner</h3>
+                    <p>Won 10K cash prize, trip to Malvan, and Reliance goodies with EdgeCompress project</p>
+                </div>
+                <div class="achievement">
+                    <h3>🏆 Best Project Award</h3>
+                    <p>Vishwakarma University for Forest Fire Detection System</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>💻 Technical Skills</h2>
+            <div style="text-align: center; margin-top: 2rem;">
+                <p><strong>Programming:</strong> Python, JavaScript, C, SQL, Bash</p>
+                <p><strong>ML/DL:</strong> TensorFlow, PyTorch, Keras, Scikit-learn, EfficientNet</p>
+                <p><strong>Computer Vision:</strong> OpenCV, Mediapipe, CNNs, RNNs</p>
+                <p><strong>Web & Cloud:</strong> Flask, FastAPI, Docker, AWS EC2, Google Cloud</p>
+                <p><strong>Data & Tools:</strong> Pandas, NumPy, Matplotlib, Git, Jupyter</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>📞 Get In Touch</h2>
+            <div class="social-links">
+                <a href="mailto:bhushancharpe135@gmail.com">📧 Email</a>
+                <a href="tel:+918767106500">📱 Phone</a>
+                <a href="https://linkedin.com/in/bhushancharpe" target="_blank">💼 LinkedIn</a>
+                <a href="https://www.instagram.com/bhushn.15" target="_blank">📸 Instagram</a>
+                <a href="https://github.com/bhushancharpe15" target="_blank">💻 GitHub</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+EOF
+
+echo "✅ Static portfolio created!"
+echo ""
+echo "🌐 Your portfolio is ready for GitHub Pages!"
+echo "📁 Files created: index.html"
+echo ""
+echo "📋 Next steps:"
+echo "1. Commit and push this file:"
+echo "   git add index.html"
+echo "   git commit -m 'Add static portfolio for GitHub Pages'"
+echo "   git push origin main"
+echo ""
+echo "2. Go to GitHub repository settings:"
+echo "   https://github.com/bhushancharpe15/bhushan-charpe-portfolio/settings/pages"
+echo ""
+echo "3. Under 'Source', select 'Deploy from a branch'"
+echo "4. Select 'main' branch and '/' folder"
+echo "5. Your site will be live at:"
+echo "   https://bhushancharpe15.github.io/bhushan-charpe-portfolio/"
+echo ""
+echo "🎉 Portfolio features:"
+echo "   ✅ Instagram contact bar (@bhushn.15)"
+echo "   ✅ All project links"
+echo "   ✅ Achievement section"
+echo "   ✅ Professional design"
+echo "   ✅ Mobile responsive"

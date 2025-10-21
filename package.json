@@ -9,7 +9,7 @@
     "export": "next build",
     "start": "next start",
     "lint": "next lint",
-    "deploy": "npm run export && echo 'Build completed. Upload the out folder to GitHub Pages.'"
+    "deploy": "npm run build && echo 'Build completed. Ready for GitHub Pages deployment.'"
   },
   "dependencies": {
     "@react-three/drei": "^9.122.0",
