@@ -50,7 +50,7 @@ export function Header() {
           animate={{ y: 0, opacity: 1 }}
           exit={{ y: -100, opacity: 0 }}
           transition={{ duration: 0.3, ease: 'easeOut' }}
-          className="fixed top-0 left-0 right-0 z-50"
+          className="fixed top-12 left-0 right-0 z-40"
         >
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="glass rounded-2xl mx-auto max-w-7xl">

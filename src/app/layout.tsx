@@ -37,7 +37,7 @@ export default function RootLayout({
           <FloatingElements />
           <ContactBar />
           <Header />
-          <main className="relative">
+          <main className="relative pt-28">
             {children}
           </main>
           <Footer />
