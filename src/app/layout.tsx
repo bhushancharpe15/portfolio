@@ -4,7 +4,6 @@ import './globals.css'
 import { Providers } from './providers'
 import { Header } from '@/components/layout/Header'
 import { Footer } from '@/components/layout/Footer'
-import { ContactBar } from '@/components/layout/ContactBar'
 import { FloatingElements } from '@/components/ui/FloatingElements'
 import { ScrollHandler } from '@/components/ui/ScrollHandler'
 const inter = Inter({ 
@@ -35,9 +34,8 @@ export default function RootLayout({
         <Providers>
           <ScrollHandler />
           <FloatingElements />
-          <ContactBar />
           <Header />
-          <main className="relative pt-28">
+          <main className="relative">
             {children}
           </main>
           <Footer />

@@ -229,46 +229,59 @@ export function HeroScene() {
                 </motion.div>
               </motion.div>
 
-              {/* Contact info */}
+              {/* Contact info - Styled Bar */}
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 1.0 }}
-                className="flex flex-wrap items-center gap-x-4 gap-y-2 text-sm text-gray-600"
+                className="bg-gradient-to-r from-blue-50 via-purple-50 to-pink-50 border border-gray-200 rounded-2xl px-6 py-4 shadow-md"
               >
-                <a 
-                  href="mailto:bhushancharpe135@gmail.com" 
-                  className="hover:text-blue-600 transition-colors cursor-pointer px-3 py-1.5 rounded-lg hover:bg-blue-50 flex items-center gap-2"
-                >
-                  <span className="text-lg">📧</span>
-                  <span>bhushancharpe135@gmail.com</span>
-                </a>
-                <span className="hidden sm:inline text-gray-400">•</span>
-                <a 
-                  href="tel:+918767106500" 
-                  className="hover:text-blue-600 transition-colors cursor-pointer px-3 py-1.5 rounded-lg hover:bg-blue-50 flex items-center gap-2"
-                >
-                  <span className="text-lg">📱</span>
-                  <span>+91 8767106500</span>
-                </a>
-                <span className="hidden sm:inline text-gray-400">•</span>
-                <div className="flex items-center gap-3">
+                <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-3 text-sm text-gray-600">
+                  <a 
+                    href="mailto:bhushancharpe135@gmail.com" 
+                    className="hover:text-blue-600 transition-colors cursor-pointer flex items-center gap-2 font-medium"
+                  >
+                    <span className="text-blue-600">📧</span>
+                    <span className="hidden lg:inline">bhushancharpe135@gmail.com</span>
+                    <span className="lg:hidden">Email</span>
+                  </a>
+                  <span className="text-gray-400">•</span>
+                  <a 
+                    href="tel:+918767106500" 
+                    className="hover:text-green-600 transition-colors cursor-pointer flex items-center gap-2 font-medium"
+                  >
+                    <span className="text-green-600">📱</span>
+                    <span>+91 8767106500</span>
+                  </a>
+                  <span className="text-gray-400">•</span>
                   <a 
                     href="https://linkedin.com/in/bhushancharpe" 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="hover:text-blue-600 transition-colors cursor-pointer px-3 py-1.5 rounded-lg hover:bg-blue-50 font-medium"
+                    className="hover:text-blue-700 transition-colors cursor-pointer flex items-center gap-2 font-medium"
                   >
-                    LinkedIn
+                    <span className="text-blue-700">💼</span>
+                    <span>LinkedIn</span>
+                  </a>
+                  <span className="hidden sm:inline text-gray-400">•</span>
+                  <a 
+                    href="https://www.instagram.com/bhushn.15?igsh=MWhmdDlxYjd0MGJ5bQ==" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="hidden sm:flex hover:text-pink-600 transition-colors cursor-pointer items-center gap-2 font-medium"
+                  >
+                    <span className="text-pink-600">📷</span>
+                    <span>Instagram</span>
                   </a>
                   <span className="text-gray-400">•</span>
                   <a 
                     href="https://github.com/bhushancharpe15" 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="hover:text-blue-600 transition-colors cursor-pointer px-3 py-1.5 rounded-lg hover:bg-blue-50 font-medium"
+                    className="hover:text-gray-800 transition-colors cursor-pointer flex items-center gap-2 font-medium"
                   >
-                    GitHub
+                    <span className="text-gray-700">💻</span>
+                    <span>GitHub</span>
                   </a>
                 </div>
               </motion.div>
