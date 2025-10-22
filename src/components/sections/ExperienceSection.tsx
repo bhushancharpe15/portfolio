@@ -22,7 +22,7 @@ const experiences = [
     technologies: ['Deep Learning', 'APIs', 'OPS Pipeline', 'Real-time Systems', 'Python', 'Model Deployment']
   },
   {
-    company: 'Binghamton University x Vishwakarma University',
+    company: 'Binghamton University x VU',
     role: 'Research Intern',
     type: 'On-Site',
     location: 'Pune',

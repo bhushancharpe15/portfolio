@@ -1,6 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
+import { Mail, Phone, Linkedin, Github, Instagram } from 'lucide-react'
 
 // Main Hero Scene component - Unique Design without 3D objects
 export function HeroScene() {
@@ -229,61 +230,58 @@ export function HeroScene() {
                 </motion.div>
               </motion.div>
 
-              {/* Contact info - Styled Bar */}
+              {/* Contact info - Modern Clean Design */}
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 1.0 }}
-                className="bg-gradient-to-r from-blue-50 via-purple-50 to-pink-50 border border-gray-200 rounded-2xl px-6 py-4 shadow-md"
+                className="flex flex-wrap items-center justify-center gap-x-6 gap-y-3 text-sm text-gray-600"
               >
-                <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-3 text-sm text-gray-600">
-                  <a 
-                    href="mailto:bhushancharpe135@gmail.com" 
-                    className="hover:text-blue-600 transition-colors cursor-pointer flex items-center gap-2 font-medium"
-                  >
-                    <span className="text-blue-600">📧</span>
-                    <span className="hidden lg:inline">bhushancharpe135@gmail.com</span>
-                    <span className="lg:hidden">Email</span>
-                  </a>
-                  <span className="text-gray-400">•</span>
-                  <a 
-                    href="tel:+918767106500" 
-                    className="hover:text-green-600 transition-colors cursor-pointer flex items-center gap-2 font-medium"
-                  >
-                    <span className="text-green-600">📱</span>
-                    <span>+91 8767106500</span>
-                  </a>
-                  <span className="text-gray-400">•</span>
-                  <a 
-                    href="https://linkedin.com/in/bhushancharpe" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="hover:text-blue-700 transition-colors cursor-pointer flex items-center gap-2 font-medium"
-                  >
-                    <span className="text-blue-700">💼</span>
-                    <span>LinkedIn</span>
-                  </a>
-                  <span className="hidden sm:inline text-gray-400">•</span>
-                  <a 
-                    href="https://www.instagram.com/bhushn.15?igsh=MWhmdDlxYjd0MGJ5bQ==" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="hidden sm:flex hover:text-pink-600 transition-colors cursor-pointer items-center gap-2 font-medium"
-                  >
-                    <span className="text-pink-600">📷</span>
-                    <span>Instagram</span>
-                  </a>
-                  <span className="text-gray-400">•</span>
-                  <a 
-                    href="https://github.com/bhushancharpe15" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="hover:text-gray-800 transition-colors cursor-pointer flex items-center gap-2 font-medium"
-                  >
-                    <span className="text-gray-700">💻</span>
-                    <span>GitHub</span>
-                  </a>
-                </div>
+                <a 
+                  href="mailto:bhushancharpe135@gmail.com" 
+                  className="hover:text-blue-600 transition-colors cursor-pointer flex items-center gap-2 font-medium"
+                >
+                  <Mail className="w-4 h-4 text-blue-600" />
+                  <span>bhushancharpe135@gmail.com</span>
+                </a>
+                <span className="text-gray-400">•</span>
+                <a 
+                  href="tel:+918767106500" 
+                  className="hover:text-green-600 transition-colors cursor-pointer flex items-center gap-2 font-medium"
+                >
+                  <Phone className="w-4 h-4 text-green-600" />
+                  <span>+91 8767106500</span>
+                </a>
+                <span className="text-gray-400">•</span>
+                <a 
+                  href="https://linkedin.com/in/bhushancharpe" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="hover:text-blue-700 transition-colors cursor-pointer flex items-center gap-2 font-medium"
+                >
+                  <Linkedin className="w-4 h-4 text-blue-700" />
+                  <span>LinkedIn</span>
+                </a>
+                <span className="text-gray-400">•</span>
+                <a 
+                  href="https://www.instagram.com/bhushn.15?igsh=MWhmdDlxYjd0MGJ5bQ==" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="hover:text-pink-600 transition-colors cursor-pointer flex items-center gap-2 font-medium"
+                >
+                  <Instagram className="w-4 h-4 text-pink-600" />
+                  <span>Instagram</span>
+                </a>
+                <span className="text-gray-400">•</span>
+                <a 
+                  href="https://github.com/bhushancharpe15" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="hover:text-gray-800 transition-colors cursor-pointer flex items-center gap-2 font-medium"
+                >
+                  <Github className="w-4 h-4 text-gray-700" />
+                  <span>GitHub</span>
+                </a>
               </motion.div>
 
               {/* Call to action buttons */}
