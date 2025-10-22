@@ -51,13 +51,15 @@ The GitHub Actions workflow is already configured in `.github/workflows/deploy.y
 
 #### Repository Name Consideration
 
-The current configuration assumes your repository is named `portfolio-website-main`. If your repository has a different name, you need to update the `next.config.js` file:
+The current configuration is set up for the repository name `portfolio`. The `next.config.js` file is already configured correctly:
 
 ```javascript
-// Update these lines in next.config.js
-assetPrefix: process.env.NODE_ENV === 'production' ? '/YOUR_REPOSITORY_NAME' : '',
-basePath: process.env.NODE_ENV === 'production' ? '/YOUR_REPOSITORY_NAME' : ''
+// Current configuration in next.config.js
+assetPrefix: process.env.NODE_ENV === 'production' ? '/portfolio' : '',
+basePath: process.env.NODE_ENV === 'production' ? '/portfolio' : ''
 ```
+
+**Note:** If you change the repository name, you must update these values in `next.config.js` to match the new repository name.
 
 #### Custom Domain (Optional)
 
