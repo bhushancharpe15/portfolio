@@ -128,7 +128,7 @@ export function HeroScene() {
                 <div className="relative -mt-8 -ml-4">
                   <div className="absolute -inset-2 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 rounded-full animate-pulse"></div>
                   <img 
-                    src="/profileimg.jpg" 
+                    src="./profileimg.jpg" 
                     alt="Bhushan Charpe"
                     className="relative w-72 h-72 md:w-96 md:h-96 rounded-full object-cover border-4 border-white shadow-2xl"
                   />
@@ -296,7 +296,7 @@ export function HeroScene() {
                 </a>
 
                 <a
-                  href="/resume.pdf"
+                  href="./resume.pdf"
                   download="Bhushan_Charpe_Resume.pdf"
                   className="px-8 py-4 bg-gradient-to-r from-green-500 to-emerald-500 text-white font-semibold rounded-2xl hover:from-green-600 hover:to-emerald-600 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 flex items-center space-x-2 cursor-pointer"
                 >

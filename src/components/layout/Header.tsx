@@ -90,7 +90,7 @@ export function Header() {
                   
                   {/* Resume Download Button */}
                   <motion.a
-                    href="/resume.pdf"
+                    href="./resume.pdf"
                     download="Bhushan_Charpe_Resume.pdf"
                     initial={{ opacity: 0, y: -20 }}
                     animate={{ opacity: 1, y: 0 }}
