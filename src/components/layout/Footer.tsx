@@ -35,7 +35,7 @@ export function Footer() {
   ]
 
   return (
-    <footer className="relative bg-gradient-to-b from-white to-gray-50 border-t border-gray-200">
+    <footer id="contact" className="relative bg-gradient-to-b from-white to-gray-50 border-t border-gray-200">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {/* Contact Info */}
