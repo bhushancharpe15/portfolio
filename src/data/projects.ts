@@ -67,7 +67,7 @@ export const projects: Project[] = [
     description: 'AI-powered electrical grid monitoring and fault prediction system with real-time monitoring capabilities. Features predictive analytics for preventing power failures.',
     coverImage: 'https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&w=800',
     liveUrl: 'https://tusharnd12.github.io/Power_Fault_Detection/',
-    githubUrl: undefined,
+    githubUrl: 'https://github.com/TusharND12/Power_Fault_Detection',
     tags: ['Machine Learning', 'IoT', 'Predictive Analytics', 'Real-time Monitoring', 'Power Systems', 'Python'],
     featured: true,
     publishedAt: '2024-07-15'
